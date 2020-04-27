@@ -1,0 +1,83 @@
+/*====Base Layout ====*/
+    *{
+        box-sizing: border-box;
+    }
+
+    body {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+
+/*==== Search Box Layout ==== */
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+/*====Input Layout ====*/
+
+    input[type="text"]{
+        background-color: #fff;
+        color: black;
+        width: 400px; /*box width*/  
+        padding: 10px;
+        border: solid .5px lightgray;
+        border-radius: 10px; /*Rounds input box*/ 
+              
+    }
+
+    input[type="text"]::placeholder{
+        padding-left:10px;
+        font-style: italic;
+    }
+
+/*=====Base Photo Gallery Layout=====*/
+    .photo-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+       
+    .photo-gallery img {
+        padding: 20px;
+    
+    }
+
+
+/*===LightBox Photos===*/
+.lb-data .lb-details{
+    text-align:center;
+}
+
+
+
+/*====Media Queries ====*/
+@media (min-width: 320px){
+  
+    input[type="text"]{
+        width:auto; /*width of search box*/
+    }
+
+}
+@media(min-width: 768px) {
+    
+    input[type="text"] {
+        width:300px; /*width of search box*/
+    }  
+}
+
+@media(min-width: 1024px){
+    input[type="text"] {
+        width:400px; /*width of search box*/
+    }
+
+}
+
+
+
+
